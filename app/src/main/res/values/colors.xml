@@ -5,7 +5,7 @@
 <resources>
     <color name="colorPrimary">#FF363B40</color>
     <color name="colorPrimaryDark">#6c3b6e</color>
-    <color name="colorAccent">#FFCF68FF</color>
+    <color name="colorAccent">#8000D7</color>
 
     <color name="colorGradientStart">#FFA23B3F</color>
     <color name="colorGradientCenter">#FF83377B</color>
@@ -23,9 +23,9 @@
     <color name="colorInactiveGradientCenter">#FF493A50</color>
     <color name="colorInactiveGradientEnd">#FF383F53</color>
 
-    <color name="colorAutocompleteHighlight">#FFCF68FF</color>
+    <color name="colorAutocompleteHighlight">#8000D7</color>
 
-    <color name="colorFloatingActionButtonTint">#96368D</color>
+    <color name="colorFloatingActionButtonTint">#8000D7</color>
 
     <color name="colorUrlInputBackground">#B2000000</color>
 
