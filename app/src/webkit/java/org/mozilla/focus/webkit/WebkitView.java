@@ -7,8 +7,11 @@ package org.mozilla.focus.webkit;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.net.SSLCertificateSocketFactory;
+import android.net.http.SslCertificate;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.webkit.CookieManager;
 import android.webkit.DownloadListener;
@@ -105,6 +108,17 @@ public class WebkitView extends NestedWebView implements IWebView, SharedPrefere
         // See restoreWebViewState() for an explanation of why we need to save this in _addition_
         // to WebView's state
         outState.putString(KEY_CURRENTURL, getUrl());
+    }
+
+    @Nullable
+    @Override
+    public SslCertificate getSiteCertificate() {
+        android.net.http.SslCertificate webViewCertificate = getCertificate();
+
+        final String issuedTo = webViewCertificate.getIssuedTo().getCName();
+        final String issuedBy = webViewCertificate.getIssuedBy().getOName();
+
+        return new SslCertificate(issuedTo, issuedBy);
     }
 
     @Override

@@ -249,4 +249,9 @@ be temporary, and you can try again later.</li>
     <string name="contextmenu_image_share">Share image</string>
     <!-- Label used in the contextmenu shown when long-pressing on an image -->
     <string name="contextmenu_image_copy">Copy image address</string>
+
+    <!-- Label used to show who issued an SSL certificate, e.g. "Verfied by: Let's Encrypt".
+         This is shown when clicking on the lock icon in the toolbar for https sites. -->
+    <string name="ssl_verifiedby">Verified by: %1$s</string>
+    <string name="ssl_secureconnection">Secure Connection</string>
 </resources>
